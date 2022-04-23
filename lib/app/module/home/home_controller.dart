@@ -52,23 +52,23 @@ class HomeController extends GetxController
   {
     // for(var i=1)
     // if(selectedBubbleItem[index] == value){
-      selectedBubbleItem[index] = value;
-      new Future.delayed(const Duration(seconds: 1), ()
-      {
-        if(selectedBubbleItem[index] == value){
-          bubbleList.remove(value);
-          print(bubbleList.length);
-        }else if(bubbleList.length == 0){
-          selectedBubbleItem.clear();
-        }
-      });
-      score.value += 1;
+    selectedBubbleItem[index] = value;
+    new Future.delayed(const Duration(seconds: 1), ()
+    {
+      if(selectedBubbleItem[index] == value){
+        bubbleList.remove(value);
+        print(bubbleList.length);
+      }else if(bubbleList.length == 0){
+        selectedBubbleItem.clear();
+      }
+    });
+    score.value += 1;
 
   }
 
 
 
-   strDigits(remainder) {
+  strDigits(remainder) {
     seconds.value = myDuration.inSeconds.remainder(60);
   }
 

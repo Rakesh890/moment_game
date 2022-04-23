@@ -25,8 +25,8 @@ class HomePage extends GetView<HomeController> {
                       ),),
                       Spacer(),
                       Text("Count : ${controller.score.value}",style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.black,fontWeight: FontWeight.w500
+                          fontSize: 20,
+                          color: Colors.black,fontWeight: FontWeight.w500
                       ),),
                       SizedBox(width: 10,),
                     ],
@@ -77,7 +77,7 @@ class HomePage extends GetView<HomeController> {
       }else{
         return ClipOval(
           child: Image.asset("assets/images/animation_popped.gif",
-          width: 80,height: 80,fit: BoxFit.cover,
+            width: 80,height: 80,fit: BoxFit.cover,
           ),
         );
       }
